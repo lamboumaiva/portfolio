@@ -237,10 +237,9 @@
         mobileMenu.addEventListener('click', () => {
             menuOpen = !menuOpen;
             if (menuOpen) {
-                navLinks.style.display = 'flex';
-                navLinks.style.flexDirection = 'column';
+                navLinks.classList.add('active');
             } else {
-                navLinks.style.display = '';
+                navLinks.classList.remove('active');
             }
         });
 
@@ -248,7 +247,7 @@
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 if (window.innerWidth <= 768) {
-                    navLinks.style.display = '';
+                    navLinks.classList.remove('active');
                     menuOpen = false;
                 }
             });

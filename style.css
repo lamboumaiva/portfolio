@@ -581,6 +581,9 @@
             .nav-links {
                 display: none;
             }
+            .nav-links.active {
+                display: flex !important;
+            }
 
             .mobile-menu {
                 display: flex;
@@ -614,7 +617,7 @@
 
             .nav-links {
                 flex-direction: column;
-                background: inherit;
+                background: #fff;
                 position: absolute;
                 top: 70px;
                 right: 20px;
@@ -622,6 +625,9 @@
                 border-radius: 10px;
                 box-shadow: 0 8px 24px rgba(0,0,0,0.15);
                 z-index: 2000;
+            }
+            [data-theme="dark"] .nav-links {
+                background: #222;
             }
         }
 
