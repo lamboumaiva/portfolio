@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coreche Maiva - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">CM</a>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets Dev</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Changer le mode sombre/clair">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>LAMBOU TIAYO</h1>
+                    <div class="subtitle">Développeuse Full-Stack et graphiste</div>
+                    <p>Passionnée par l'art de la programmation, je transforme des idées créatives en solutions digitales innovantes. Toujours prête à relever de nouveaux défis et à repousser les limites du possible dans l'univers du développement web.</p>
+                    <a href="https://wa.me/237673616830" class="cta-button">
+                        <i class="fas fa-envelope"></i> Me Contacter
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-photo">
+                        <!-- <i class="fas fa-user"></i> -->
+                        <img src="media/maphoto.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Mes Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-category">
+                        <i class="fas fa-code"></i>
+                        Langages de Programmation
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-level advanced">Avancé</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level advanced">Avancé</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-level advanced">Avancé</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level intermediate">Intermédiaire</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Visual Basic</span>
+                        <span class="skill-level advanced">Avancé</span>
+                    </div>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-category">
+                        <i class="fas fa-layer-group"></i>
+                        Frameworks & Technologies
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Django</span>
+                        <span class="skill-level advanced">Avancé</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Vue.js</span>
+                        <span class="skill-level intermediate">Debutante</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Bootstrap</span>
+                        <span class="skill-level advanced">Avancé</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SCSS</span>
+                        <span class="skill-level advanced">Debutante</span>
+                    </div>
+                </div>
+
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-category">
+                        <i class="fas fa-tools"></i>
+                        Outils de Développement
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Visual Studio Code</span>
+                        <span class="skill-level advanced">Avancé</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git/GitHub</span>
+                        <span class="skill-level advanced">Intermediare</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Terminal/CLI</span>
+                        <span class="skill-level intermediate">avancé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Projets de Développement</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Libriss</h3>
+                        <p class="project-description">Plateforme complète de lecture, d'achat et de vente de livres en ligne. Interface moderne avec système de recommandations personnalisées.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ImmoVibes</h3>
+                        <p class="project-description">Site de location de biens immobiliers avec système de recherche avancée, géolocalisation et gestion complète des propriétés.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CampusLink</h3>
+                        <p class="project-description">Réseau social pour étudiants permettant le partage d'expériences, de ressources et la création de communautés universitaires.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CV Analyzer</h3>
+                        <p class="project-description">Outil d'analyse et d'optimisation de CV utilisant l'IA pour fournir des recommandations personnalisées et améliorer l'impact professionnel.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Vue.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section id="design" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Design Graphique</h2>
+            <div class="design-grid">
+                <div class="design-card animate-on-scroll">
+                    <div class="design-image">
+                         <img src="media/AfficheGenerale.jpg" alt="">
+                    </div>
+                    <div class="design-content">
+                        <h3 class="design-title">Identité Visuelle</h3>
+                        <p class="design-type">Logos & Branding</p>
+                    </div>
+                </div>
+
+                <div class="design-card animate-on-scroll">
+                    <div class="design-image">
+                        <!-- <i class="fas fa-mobile-alt"></i> -->
+                        <img src="media/CreationSitesWeb.jpg" alt="">
+                    </div>
+                    <div class="design-content">
+                        <h3 class="design-title">UI/UX Design</h3>
+                        <p class="design-type">Interfaces Mobiles & Web</p>
+                    </div>
+                </div>
+
+                <div class="design-card animate-on-scroll">
+                    <div class="design-image">
+                        <img src="media/logicielDesktop.jpg" alt="">
+                    </div>
+                    <div class="design-content">
+                        <h3 class="design-title">Print Design</h3>
+                        <p class="design-type">Affiches & Publications</p>
+                    </div>
+                </div>
+
+                <div class="design-card animate-on-scroll">
+                    <div class="design-image">
+                        <img src="media/MarketingDigital.jpg" alt="">
+                    </div>
+                    <div class="design-content">
+                        <h3 class="design-title">Illustrations</h3>
+                        <p class="design-type">Art Digital & Créations</p>
+                    </div>
+                </div>
+
+                <div class="design-card animate-on-scroll">
+                    <div class="design-image">
+                        <img src="media/AppMobiles.jpg" alt="">
+                    </div>
+                    <div class="design-content">
+                        <h3 class="design-title">Motion Design</h3>
+                        <p class="design-type">Animations & Vidéos</p>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Restons en Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="contact-title">WhatsApp</h3>
+                    <p class="contact-info">
+                        <a href="https://wa.me/237673616830" class="contact-link" target="_blank">
+                            +237 673 616 830
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="contact-title">LinkedIn</h3>
+                    <p class="contact-info">
+                        <a href="https://www.linkedin.com/in/maiva-lambou-2a7020259/" class="contact-link" target="_blank">
+                            Profil LinkedIn
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-info">
+                        <a href="mailto:lambou.maiva2018@gmail.com" class="contact-link">
+                            lambou.maiva2018@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="contact-title">GitHub</h3>
+                    <p class="contact-info">
+                        <a href="https://github.com/lamboumaiva" class="contact-link" target="_blank">
+                            Profil GitHub
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--card-color); padding: 2rem 0; text-align: center; border-top: 1px solid var(--primary-color);">
+        <div class="container">
+            <p style="color: var(--text-color); margin-bottom: 1rem;">
+                &copy; 2025 LAMBOU TIAYO CORECHE MAIVA - Développeuse Full-Stack
+            </p>
+            <p style="color: var(--primary-color); font-size: 0.9rem;">
+                Créé avec <i class="fas fa-heart" style="color: #e74c3c;"></i> et beaucoup de café
+            </p>
+        </div>
+    </footer>
+
+   <script src="scripts.js"></script>
+</body>
+</html>
